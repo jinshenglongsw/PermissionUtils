@@ -9,19 +9,17 @@ How to use:
                 
 3.//create interface
 
-PermissionsUtils.IPermissionsResult permissionsResult = new PermissionsUtils.IPermissionsResult() {
+        PermissionsUtils.IPermissionsResult permissionsResult = new PermissionsUtils.IPermissionsResult() {
         @Override
         public void passPermissons() {
             //Its request success.
             Toast.makeText(MainActivity.this, "Its request success.", Toast.LENGTH_SHORT).show();
-        }
-
-
-    };
+          }
+      };
     
 4.//create permission request callback.
 
-@Override
+    @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
     super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
