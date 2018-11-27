@@ -1,5 +1,6 @@
 How to use:
 1.import PermissionsUtils.java
+
 2.use this code:
 
                 //add permission for the list..and register permission for the manifast.xml. 
