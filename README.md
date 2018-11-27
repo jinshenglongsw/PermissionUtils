@@ -9,7 +9,7 @@ How to use:
                 //and like this.
                 PermissionsUtils.getInstance().checkPermissions(MainActivity.this, permissions, permissionsResult, CAMERA_REQUEST_CODE);
                 
-3.//create interface
+3.//create interface instance
 
         PermissionsUtils.IPermissionsResult permissionsResult = new PermissionsUtils.IPermissionsResult() {
         @Override
