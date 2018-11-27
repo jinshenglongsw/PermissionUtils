@@ -8,7 +8,8 @@ How to use:
                 PermissionsUtils.getInstance().checkPermissions(MainActivity.this, permissions, permissionsResult, CAMERA_REQUEST_CODE);
                 
 3.//create interface
-    PermissionsUtils.IPermissionsResult permissionsResult = new PermissionsUtils.IPermissionsResult() {
+
+PermissionsUtils.IPermissionsResult permissionsResult = new PermissionsUtils.IPermissionsResult() {
         @Override
         public void passPermissons() {
             //Its request success.
@@ -19,6 +20,7 @@ How to use:
     };
     
 4.//create permission request callback.
+
 @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
     super.onRequestPermissionsResult(requestCode, permissions, grantResults);
