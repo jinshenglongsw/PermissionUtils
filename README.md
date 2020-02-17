@@ -9,15 +9,22 @@ How to use:
                 //and like this.
                 PermissionsUtils.getInstance().checkPermissions(MainActivity.this, permissions, permissionsResult, CAMERA_REQUEST_CODE);
                 
-3.//create interface instance
+3.//implements interface
 
-        PermissionsUtils.IPermissionsResult permissionsResult = new PermissionsUtils.IPermissionsResult() {
         @Override
-        public void passPermissons() {
-            //Its request success.
-            Toast.makeText(MainActivity.this, "Its request success.", Toast.LENGTH_SHORT).show();
-          }
-      };
+    public void permissionPass() {
+        Toast.makeText(activity, "pass", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void permissionNoPass() {
+        Toast.makeText(activity, "no pass", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void permissionNoPassNaver() {
+        Toast.makeText(activity, "no pass naver show again", Toast.LENGTH_SHORT).show();
+    }
     
 4.//create permission request callback.
 
