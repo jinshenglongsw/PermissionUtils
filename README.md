@@ -4,14 +4,14 @@ How to use:
 
 2.use this code:
 
-                //add permission for the list..and register permission for the manifast.xml. 
-                String[] permissions = new String[]{Manifest.permission.CAMERA};
-                //and like this.
-                PermissionsUtils.getInstance().checkPermissions(MainActivity.this, permissions, permissionsResult, CAMERA_REQUEST_CODE);
+    //add permission for the list..and register permission for the manifast.xml. 
+    String[] permissions = new String[]{Manifest.permission.CAMERA};
+    //and like this.
+    PermissionsUtils.getInstance().checkPermissions(MainActivity.this, permissions, permissionsResult, CAMERA_REQUEST_CODE);
                 
 3.//implements interface
 
-        @Override
+    @Override
     public void permissionPass() {
         Toast.makeText(activity, "pass", Toast.LENGTH_SHORT).show();
     }
